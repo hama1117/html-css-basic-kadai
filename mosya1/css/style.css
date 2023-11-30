@@ -1,56 +1,173 @@
 /* PC用のスタイル */
-@media screen and (min-width: 768px) {
 
-  #nav-pc {
-    font-size: 34px;
-    margin: 30px;
-    font-family: 'Noto Sans JP';
+@media screen and (min-width: 1200px) {
+
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+header {
+  max-width: 920px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+nav {
+  display: flex;
+  font-size: 34px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  border: solid 1px;
+  padding: 0 20px;
+  font-size: 34px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+div a {
+  padding: 20px;
+}
+
+#camera {
+  width: 100%;
+  height: auto;
+  margin: 0 0 50px 0;
+}
+
+.yokogao {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: solid gray;
+  padding: 2px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.content-about {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+
+.asahina {
+ margin: 60px 130px;
+}
+
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+ul li {
+  font-size: 18px;
+}
+
+.content-works {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  width: 300px; 
+}
+
+.mounten {
+  padding: 0 20px;
+}
+
+img {
+  width: 300px;
+}
+
+footer {
+  text-align: center;
+  margin: 50px auto;
+}
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+  * {
+    font-family: 'Noto Sans JP', sans-serif;
   }
 
-  .myprofile {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #333333;
-  }
-
-  .a {
-    text-align: right;
+  
+  nav {
+    width: 150px;
+    text-align: center;
+    padding: 5px;
   }
 
   h1 {
-    font-size: 34px;
+    border: solid 1px;
+    margin: 1px;
   }
-
-  h2 {
-    font-size: 24px;
+  
+  a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
   }
-
-  span {
-    font-size: 18px;
+  
+  div a {
+    font-size: 25px;
   }
 
   #camera {
     width: 100%;
     height: auto;
+    margin: 10px auto;
   }
 
-  #about {
-    display: flex;
-    justify-content: center;
+  .yokogao {
+    border-radius: 50%;
+    border: solid gray;
+    padding: 2px;
+    text-align: center;
+    margin: 0 50px;
   }
 
+  .asahina {
+    margin: 0 0 80px 0;
+  }
+  
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    margin: 50px auto;
+  }
+
+  h3 {
+    text-align: center;
+  }
 
   #works {
-    display: flex;
+    text-align: center;
+  }
+
+  p {
+    margin: 0 0 50px 0;
   }
 
   footer {
     text-align: center;
+    margin: 50px 0 20px 0;
   }
 
-}
-
-/* スマホ用のスタイル */
-@media screen and (max-width: 767) {
-
-}
+} 
