@@ -2,6 +2,11 @@
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -44,16 +49,18 @@ h2 {
   font-size: 34px;
 }
 
-.content-one {
+.about-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap; 
 }
 
-.content-twe {
+.works-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap; 
 }
 
 h3 {
@@ -66,4 +73,27 @@ ul li {
 
 p {
   font-size: 18px;
+}
+
+.item {
+  padding-bottom: 60px;
+  width: 30%;
+}
+
+.item_center {
+  padding: auto 20px;
+}
+
+footer {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .item {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
 }
